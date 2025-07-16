@@ -1,0 +1,125 @@
+body {
+  font-family: 'Tahoma', sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #4caf50, #81c784);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.category {
+  margin-bottom: 50px;
+}
+
+.category h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #2e7d32;
+  border-right: 5px solid #a5d6a7;
+  padding: 10px;
+  background-color: #e8f5e9;
+  border-radius: 20px;
+}
+
+.file-card {
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.file-card:hover {
+  transform: scale(1.03);
+}
+
+.file-card h3 {
+  font-size: 18px;
+  color: #388e3c;
+  margin-bottom: 10px;
+}
+
+.file-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #2196f3;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+  background: #1976d2;
+}
+
+footer {
+  text-align: center;
+  background: #eeeeee;
+  padding: 15px;
+  font-size: 14px;
+  border-top: 1px solid #ccc;
+}
+.shorts-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.short-card {
+  width: 280px;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+}
+
+.short-card video {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.short-card h3 {
+  font-size: 16px;
+  color: #2e7d32;
+  margin-bottom: 8px;
+}
