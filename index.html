@@ -1,124 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>📥 مكتبة التحميل الإسلامية</title>
-  <link rel="stylesheet" href="style.css/style.css" />
-</head>
-<body>
-
-  <header>
-    <h1>📥 مكتبة التحميل الإسلامية</h1>
-    <p>قسمنا لك المحتوى ليسهل عليك الوصول لما يفيدك بإذن الله</p>
-  </header>
-
-  <main class="container">
-    <!-- قسم الشورتس -->
-    <section class="category">
-    <h2>🎬 مقاطع قصيرة - Shorts</h2>
-
-    <div class="shorts-container">
-
-        <div class="short-card">
-        <video controls preload="metadata">
-            <source src="shorts/lv_0_٢٠٢٤٠٧٣٠٢٣٣٧٥٦ - Trim.mp4" type="video/mp4">
-            المتصفح لا يدعم تشغيل الفيديو.
-        </video>
-        <h3>🎧 تلاوة مؤثرة - الكهف</h3>
-        <a href="shorts/lv_0_٢٠٢٤٠٧٣٠٢٣٣٧٥٦ - Trim.mp4" download class="download-btn">⬇️ تحميل</a>
-        </div>
-
-        <div class="short-card">
-        <video controls preload="metadata">
-            <source src="shorts/WhatsApp Video 2025-07-09 at 01.07.53_48b89edd.mp4" type="video/mp4">
-            المتصفح لا يدعم تشغيل الفيديو.
-        </video>
-        <h3>🗣️ نصيحة سريعة</h3>
-        <a href="shorts/WhatsApp Video 2025-07-09 at 01.07.53_48b89edd.mp4" download="azkar.pdf"class="download-btn">⬇️ تحميل</a>
-        </div>
-        <div class="short-card">
-        <video controls preload="metadata">
-            <source src="#" type="video/mp4">
-            المتصفح لا يدعم تشغيل الفيديو.
-        </video>
-        <h3>🗣️ نصيحة سريعة</h3>
-        <a href="#" download class="download-btn">⬇️ تحميل</a>
-        </div>
-        <div class="short-card">
-        <video controls preload="metadata">
-            <source src="shorts/lv_0_٢٠٢٤٠٧٣٠٢٣٣٧٥٦ - Trim.mp4" type="video/mp4">
-            المتصفح لا يدعم تشغيل الفيديو.
-        </video>
-        <h3>🗣️ نصيحة سريعة</h3>
-        <a href="files/nasihah.mp4" download class="download-btn">⬇️ تحميل</a>
-        </div>
-
-    </div>
-    </section>
-
-    <!-- قسم الكتب -->
-    <section class="category">
-      <h2>📚 كتب إسلامية</h2>
-
-      <div class="file-card">
-        <h3>📘 كتاب الأذكار اليومية</h3>
-        <p><strong>النوع:</strong> PDF</p>
-        <a href="files/azkar.pdf" download class="download-btn">⬇️ تحميل</a>
-      </div>
-    </section>
-
-    <!-- قسم الصوتيات -->
-    <section class="category">
-      <h2>🎧 صوتيات</h2>
-
-      <div class="file-card">
-        <h3>🎤 سورة الكهف - تلاوة</h3>
-        <p><strong>النوع:</strong> MP3</p>
-        <a href="files/kahf.mp3" download class="download-btn">⬇️ تحميل</a>
-      </div>
-
-      <div class="file-card">
-        <h3>🕌 أذان جميل - المدينة</h3>
-        <p><strong>النوع:</strong> MP3</p>
-        <a href="files/adhan.mp3" download class="download-btn">⬇️ تحميل</a>
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    جميع الحقوق محفوظة © 2025 - موقع مكتبة التحميل
-  </footer>
-<script>
-  // أولًا: لما فيديو يشتغل، نوقف باقي الفيديوهات
-  const allVideos = document.querySelectorAll("video");
-
-  allVideos.forEach(video => {
-    video.addEventListener("play", () => {
-      allVideos.forEach(v => {
-        if (v !== video) v.pause();
-      });
-    });
-  });
-
-  // ثانيًا: لما الفيديو يخرج من الشاشة، نوقفه تلقائيًا
-  function isVisible(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-    );
-  }
-
-  window.addEventListener("scroll", () => {
-    allVideos.forEach(video => {
-      if (!isVisible(video)) {
-        video.pause();
-      }
-    });
-  });
-</script>
-
-</body>
-</html>
