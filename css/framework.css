@@ -1,0 +1,315 @@
+:root {
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+  }
+/* start padding ,margin */
+.m-20{
+    margin: 20px;
+}
+.mt-0{
+    margin-top: 0;
+}
+.mb-0{
+    margin-bottom: 0;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mt-30{
+    margin-top: 30px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.mt-5{
+    margin-top: 5px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-5{
+    margin-bottom: 5px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.mb-50{
+    margin-bottom: 50px;
+}
+.mr-15{
+    margin-right: 15px;
+}
+.mr-10{
+    margin-right: 10px;
+}
+.mr-5{
+    margin-right: 5px;
+}
+.mtb-15{
+  margin: 15px 0;
+}
+.mtb-10{
+  margin: 10px 0;
+}
+.p-10{
+    padding: 10px;
+}
+.pt-10{
+    padding-top: 10px;
+}
+.pb-15{
+    padding-bottom: 15px;
+}
+.p-20{
+    padding: 20px;
+}
+.m-5-t-b{
+    margin: 5px 0;
+}
+/* end padding ,margin */
+
+
+/* start border */
+.b-none{
+    border: none;
+}
+.rad-10{
+    border-radius: 10px;
+}
+.border-r-c{
+    border-radius: 50%;
+}
+.border{
+  border: 1px solid black;
+}
+/* end border */
+
+
+/* colur */
+.b-shadow{
+    box-shadow: 0 0 10px #ddd;
+}
+.c-black {
+    color: black;
+  }
+  .c-white {
+    color: white;
+  }
+  .c-grey {
+    color: var(--grey-color);
+  }
+  .c-red {
+    color: var(--red-color);
+  }
+  .c-green {
+    color: var(--green-color);
+  }
+  .c-blue {
+    color: var(--blue-color);
+  }
+  .c-orange {
+    color: var(--orange-color);
+  }
+  .bg-grey{
+    background-color: #777;
+  }
+  .bg-red {
+    background-color: var(--red-color);
+  }
+  .bg-green {
+    background-color: var(--green-color);
+  }
+  .bg-blue {
+    background-color: var(--blue-color);
+  }
+  .bg-blue-alt {
+    background-color: var(--blue-alt-color);
+  }
+  .bg-orange {
+    background-color: var(--orange-color);
+  }
+  .bg-white {
+    background-color: white;
+  }
+  .bg-eee {
+    background-color: #eee;
+  }
+  .bg-20-blue{
+    background-color: rgb(0 117 255 / 20%);
+  }
+  .bg-20-orange{
+    background-color: rgb(245 158 11 / 20%);  
+  }
+  .bg-20-green{
+    background-color: rgb(34 197 94 / 20%);
+  }
+
+/* colur */
+
+
+/* start display */
+.d-grid{
+    display: grid;
+}
+.gap-20{
+    gap: 20px;
+}
+.d-block{
+    display: block;
+}
+.d-ib{
+    display: inline-block;
+}
+.d-flex{
+    display: flex;
+}
+.flex-1{
+  flex: 1;
+}
+.flex-w{
+  flex-wrap: wrap;
+}
+.al-center{
+  align-items: center;
+}
+/* end display */
+
+
+/* start position */
+.p-r{
+    position: relative;
+}
+.p-ab{
+    position: absolute;
+}
+/* end position */
+
+
+/* start text */
+.w-full{
+    width: 100%;
+}
+.w-fit{
+    width: fit-content;
+}
+.w-40{
+    width:40px;
+}
+.w-33{
+    width:33px;
+}
+.w-50{
+    width:50px;
+}
+.w-60{
+    width:60px;
+}
+.w-70{
+    width:70px;
+}
+.w-100{
+    width:100px;
+}
+.w-160{
+    width:160px;
+}
+.w-50-100{
+    width:50%;
+}
+.h-6{
+  height:6px;
+}
+.h-33{
+  height:33px;
+}
+.h-40{
+  height:40px;
+}
+.h-full{
+  height:100%;
+}
+.h-fit{
+  height:fit-content;
+}
+.l-h-1-5{
+    line-height: 1.5;
+}
+.t-center{  
+    text-align: center;
+}
+.t-end{
+  text-align: end;
+}
+.fw-bold{
+    font-weight: bold;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-normal{
+    font-weight: normal;
+}
+.fs-13{
+    font-size: 13px;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-28{
+    font-size: 28px;
+}
+.fs-18{
+    font-size: 18px;
+}
+/* end text */
+/* start transition */
+.t-03{
+    transition: 0.3s;
+}
+/* end transition */
+/* start opacity */
+.opacity-0{
+    opacity: 0;
+}
+/* end opacity */
+/* start conponents */
+.between-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.around-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.center-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.end-flex{
+  display: flex;
+  align-items: flex-end;
+}
+.btn-shape{
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.bage{
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+} 
+@media (max-width:500px){
+  .info .bage{
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      margin: 30px 0px;
+  }
+}
+/* end conponents */
