@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- main template css file -->
+    <link rel="stylesheet" href="css/3.css">
+    <!-- font awesome library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- render all element normally -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- framework -->
+     <link rel="stylesheet" href="css/framework.css">
+     <!-- google font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- start bage -->
+     <div class="bage d-flex">
+        <div class="bar p-20 bg-white b-shadow p-r">
+            <h3 class="mo3a p-10 p-r w-fit">Mo3a</h3>
+            <ul>
+                <li>
+                    <a href="index.html"class="active p-10 d-block m-5-t-b c-black rad-10 p-10">
+                        <i class="fa-regular fa-calendar-days"></i>
+                       <span> Dashboard</span>
+                    </a>
+                </li>
+                <li >
+                <a href="settings.html"class="p-10 d-block m-5-t-b c-black">
+                    <i class="fa-solid fa-gear fa-fw"></i>
+                    <span>Settings</span>
+                </a>
+                </li>
+                <li>
+                    <a href="Profile.html"class="p-10 d-block m-5-t-b c-black rad-10-10">
+                        <i class="fa-solid fa-user-circle fa-fw"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Projects.html"class="p-10 d-block m-5-t-b c-black rad-10">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                       <span>Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Courses.html"class="p-10 d-block m-5-t-b c-black rad-10">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                      <span>Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Friends.html"class="p-10 d-block m-5-t-b c-black rad-10">
+                        <i class="fa-solid fa-users fa-fw"></i>
+                        <span>Friends</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Files.html"class="p-10 d-block m-5-t-b c-black rad-10">
+                        <i class="fa-solid fa-file fa-fw"></i>
+                        <span>Files</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Plans.html"class="p-10 d-block m-5-t-b c-black rad-10">
+                        <i class="fa-solid fa-list-check fa-fw"></i>
+                        <span>Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-full h-full">
+            <div class="content-head between-flex p-10 bg-white">
+                <div class="serch p-r w-0 d-flex al-center">
+                    <span class="icon fa-solid fa-magnifying-glass mr-5 fs-18 p-5"></span>
+                    <input type="text" placeholder="Type a Keyword" class="inpSerch h-full rad-10 t-03 w-full w-0">
+
+                </div>
+                <div class="icons between-flex">
+                    <div class="bell p-r mr-15">
+                        <i class="fa-regular fa-bell fa-lg "></i>
+                    </div>
+                    <img src="imgs/avatar.avif" alt="" class="border-r-c w-40">
+                </div>
+            </div>
+            <div class="info w-full h-full p-20">
+                <h1 class="fw-500 fs-40 p-r pb-15 mb-30">Dashboard</h1>
+                <div class="dashboard-bage d-grid gap-20">
+                    <!-- welcome -->
+                    <div class="welcome-bage bg-white rad-10">
+                        <div class="welcome between-flex p-20 bg-eee">
+                            <div class="text">
+                                <h2 class="mt-0 mb-10">Welcome</h2>
+                                <p class="mt-0 mb-20 c-grey fs-15">Mo3a</p>
+                            </div>
+                            <img src="imgs/welcome.png" alt="">
+                        </div>
+                        <div class="bottom p-r">
+                            <img src="imgs/avatar.avif" alt="" class="border-r-c bg-white p-ab">
+                            <div class="center  t-center around-flex mb-20 p-20">
+                                <div class="std">
+                                    <span>Mohamed Yasser</span>
+                                    <p class="mt-0 mb-20 c-grey fs-15">Developer</p>
+                                </div>
+                                <div class="std">
+                                    <span>80</span>
+                                    <p class="mt-0 mb-20 c-grey fs-15">Projects</p>
+                                </div>
+                                <div class="std">
+                                    <span>$8500</span>
+                                    <p class="mt-0 mb-20 c-grey fs-15">Earned</p>
+                                </div>
+                            </div>
+                            <input class="Profile d-block fs-14 bg-blue c-white b-none w-fit btn-shape" value="Profile" type="submit">
+                        </div>
+                    </div>
+                    <!-- welcome -->
+                    <!-- Quick Draft -->
+                    <div class="quick-draft bg-white rad-10 p-20">
+                        <h2 class="mt-0 mb-10">Quick Draft</h2>
+                        <p class="mt-0 mb-20 c-grey fs-15">Write A Draft For Your Ideas</p>
+                        <form action="">
+                            <input type="text" placeholder="Tytle" class="p-10 rad-10 bg-eee w-full mb-20 b-none">
+                            <textarea name="" id="" placeholder="Your Thought"class="p-10 rad-10 bg-eee w-full mb-20 b-none"></textarea>
+                            <input class="save d-block fs-14 bg-blue c-white b-none w-fit btn-shape" value="save" type="submit">
+                        </form>
+                    </div>
+                    <!-- Quick Draft -->
+                    <!-- targets -->
+                     <div class="targets bg-white p-20 rad-10">
+                        <h2 class="mb-10 mt-0">Yearly Targets</h2>
+                        <p class="mb-20 mt-0 c-grey fs-15">Targets Of The Year</p>
+                        <div class="target-row center-flex mb-20">
+                            <div class="icon bg-20-blue mr-15 center-flex">
+                                <i class="fa-solid fa-dollar-sign fa-lg c-blue"></i>
+                            </div>
+                            <div class="details">
+                                <span class="d-block c-grey fs-14 mb-10">
+                                    Money
+                                </span>
+                                <span class="fw-bold mb-10 d-block">$20.000</span>
+                                <div class="progress w-full p-r bg-20-blue">
+                                    <span style="width:80%" class="bg-blue d-block h-full p-r">
+                                        <span class="blue p-ab p-r bg-blue c-white">80%</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="target-row center-flex mb-20 ">
+                            <div class="icon bg-20-orange mr-15 center-flex">
+                                <i class="fa-solid fa-code fa-lg c-orange"></i>
+                            </div>
+                            <div class="details">
+                                <span class="d-block c-grey fs-14 mb-10">
+                                    Money
+                                </span>
+                                <span class="fw-bold mb-10 d-block">24</span>
+                                <div class="progress w-full p-r bg-20-orange">
+                                    <span style="width:60%" class="bg-orange d-block h-full p-r">
+                                        <span class="orange p-ab p-r bg-orange c-white">60%</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="target-row center-flex mb-20 ">
+                            <div class="icon bg-20-green mr-15 mr-15 center-flex">
+                                <i class="fa-solid fa-user fa-lg c-green"></i>
+                            </div>
+                            <div class="details">
+                                <span class="d-block c-grey fs-14 mb-10">
+                                    Money
+                                </span>
+                                <span class="fw-bold mb-10 d-block">12</span>
+                                <div class="progress w-full bg-20-green">
+                                    <span style="width:75%" class="bg-green d-block h-full p-r">
+                                        <span class="green p-ab p-r bg-green c-white">75%</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                    <!-- targets -->
+                    <!-- Tickets -->
+                    <div class="tickets p-20 rad-10 bg-white">
+                        <h2 class="mt-0 mb-10">Tickets Statistics</h2>
+                        <p class="c-grey fs-15 mt-0 mb-20">Everything About Support Tickets</p>
+                        <div class="contain d-flex gap-20 flex-w t-center">
+                            <div class="box p-20 rad-10 border">
+                                <i class="fa-regular fa-rectangle-list fa-2x mb-10 c-orange"></i>
+                                <span class="d-block fs-28 mb-5 fw-bold">2500</span>
+                                <p class="c-grey fs-14">Total</p>
+                            </div>
+                            <div class="box p-20 rad-10 border">
+                                <i class="fa-solid fa-spinner fa-2x mb-10 c-blue"></i>
+                                <span class="d-block fs-28 mb-5 fw-bold">500</span>
+                                <p class="c-grey fs-14">Pending</p>
+                            </div>
+                            <div class="box p-20 rad-10 border">
+                                <i class="fa-regular fa-circle-check fa-2x mb-10 c-green"></i>
+                                <span class="d-block fs-28 mb-5 fw-bold">1900</span>
+                                <p class="c-grey fs-14">Pending</p>
+                            </div>
+                            <div class="box p-20 rad-10 border">
+                                <i class="fa-regular fa-rectangle-xmark fa-2x mb-10 c-red"></i>
+                                <span class="d-block fs-28 mb-5 fw-bold">100</span>
+                                <p class="c-grey fs-14">Deleted</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tickets -->
+                    <!-- Latest News -->
+                     <div class="news p-20 rad-10 bg-white quick-draft">
+                        <h2 class="mb-20 mt-0">Latest News</h2>
+                        <div class="col d-flex al-center fil">
+                            <img src="imgs/news-01.png" class="rad-10 w-100 mr-15 mt-5" alt="">
+                            <div class="text">
+                                <h3 class="mb-10">Created SASS Section</h3>
+                                <p class="c-grey fs-14">New SASS Examples & Tutorials</p>
+                            </div>
+                            <span class="rad-10 bg-eee fs-14">3 Days Ago</span>
+                        </div>
+                        <hr>
+                        <div class="col d-flex al-center fil ">
+                            <img src="imgs/news-02.png" class="rad-10 w-100 mr-15 mt-5" alt="">
+                            <div class="text">
+                                <h3 class="mb-10">Changed The Design</h3>
+                                <p class="c-grey fs-14">A Brand New Website Design</p>
+                            </div>
+                            <span class="rad-10 bg-eee fs-14">5 Days Ago</span>
+                        </div>
+                        <hr>
+                        <div class="col d-flex al-center fil">
+                            <img src="imgs/news-03.png" class="rad-10 w-100 mr-15 mt-5" alt="">
+                            <div class="text">
+                                <h3 class="mb-10">Team Increased</h3>
+                                <p class="c-grey fs-14">3 Developers Joined The Team</p>
+                            </div>
+                            <span class="rad-10 bg-eee fs-14">7 Days Ago</span>
+                        </div>
+                        <hr>
+                        <div class="col d-flex al-center mt-20 fil">
+                            <img src="imgs/news-04.png" class="rad-10 w-100 mr-15 mt-5" alt="">
+                            <div class="text">
+                                <h3 class="mb-10">Added Payment Gateway</h3>
+                                <p class="c-grey fs-14">Many New Payment Gateways Added</p>
+                            </div>
+                            <span class="rad-10 bg-eee fs-14">9 Days Ago</span>
+                        </div>
+                     </div>
+                    <!-- Latest News -->
+                    <!-- Latest Tasks -->
+                     <div class="tasks p-20 rad-10 bg-white">
+                        <h2 class="mt-0 mb-20 ">Latest Tasks</h2>
+                        <div class="into between-flex ">
+                            <div class="text">
+                                <h4 class="mb-10">Record One New Video</h4>
+                                <p class="c-grey">Record Python Create Exe Project</p>
+                            </div>
+                            <i class="fa-regular fa-trash-can delete t-03"></i>
+                        </div>
+                        <hr>
+                        <div class="into between-flex ">
+                            <div class="text">
+                                <h4 class="mb-10">Write Blog Post</h4>
+                                <p class="c-grey">Write a blog post about JavaScript ES6 features</p>
+                            </div>
+                            <i class="fa-regular fa-trash-can delete t-03"></i>
+                        </div>
+                        <hr>
+                        <div class="into between-flex ">
+                            <div class="text">
+                                <h4 class="mb-10">Update Portfolio</h4>
+                                <p class="c-grey">Add recent projects to portfolio</p>
+                            </div>
+                            <i class="fa-regular fa-trash-can delete t-03"></i>
+                        </div>
+                        <hr>
+                        <div class="into remove between-flex  c-grey">
+                            <div class="text">
+                                <h4 class="mb-10">Prepare Presentation</h4>
+                                <p class="c-grey">Prepare slides for the upcoming conference</p>
+                            </div>
+                            <i class="fa-regular fa-trash-can delete t-03"></i>
+                        </div>
+                        <hr>
+                        <div class="into between-flex ">
+                            <div class="text">
+                                <h4 class="mb-10">Fix Bugs</h4>
+                                <p class="c-grey">Fix bugs reported by QA team</p>
+                            </div>
+                            <i class="fa-regular fa-trash-can delete t-03"></i>
+                        </div>
+                    </div>
+                    <!-- Latest Tasks -->
+                    <!-- Top Search Items -->
+                     <div class="items p-20 bg-white rad-10">
+                        <h2 class="mb-20 mt-0">Top Search Items</h2>
+                        <div class="into between-flex c-grey mb-30">
+                            <p>Keyword</p>
+                            <p>Search Count</p>                            
+                        </div>
+                        <div class="into between-flex mb-30">
+                            <p>Programming</p>
+                            <span class="fs-14 bg-eee btn-shape">220</span>                            
+                        </div>
+                        <div class="into between-flex mb-30">
+                            <p>JavaScript</p>
+                            <span class="fs-14 bg-eee btn-shape">180</span>                            
+                        </div>
+                        <div class="into between-flex mb-30">
+                            <p>PhP</p>
+                            <span class="fs-14 bg-eee btn-shape">160</span>                            
+                        </div>
+                        <div class="into between-flex mb-30">
+                            <p>Code</p>
+                            <span class="fs-14 bg-eee btn-shape">145</span>                            
+                        </div>
+                        <div class="into between-flex mb-30">
+                            <p>Design</p>
+                            <span class="fs-14 bg-eee btn-shape">110</span>                            
+                        </div>
+                        <div class="into between-flex mb-30">
+                            <p>Logic</p>
+                            <span class="fs-14 bg-eee btn-shape">95</span>                            
+                        </div>
+                     </div>
+                    <!-- Top Search Items -->
+                    <!-- Latest Uploads -->
+                     <div class="uploads bg-white rad-10 p-20 ">
+                        <h2 class="mt-0 mb-20">Latest Uploads</h2>
+                        <div class="into between-flex ">
+                            <div class="info d-flex al-center">
+                                <img class="w-40 mr-15" src="imgs/pdf.svg" alt="">
+                                <div class="text">
+                                    <h4 class="mb-10">My-Video-File.avi</h4>
+                                    <p class="c-grey fs-15">Admin</p>
+                                </div>
+                            </div>
+                            <span class="btn-shape fs-14 bg-eee">8.9mb</span>
+                        </div>
+                        <hr>
+                        <div class="into between-flex ">
+                            <div class="info d-flex al-center">
+                                <img class="w-40 mr-15" src="imgs/pdf.svg" alt="">
+                                <div class="text">
+                                    <h4 class="mb-10">My-Psd-File.pdf</h4>
+                                    <p class="c-grey fs-15">Osama</p>
+                                </div>
+                            </div>
+                            <span class="btn-shape fs-14 bg-eee">2.9mb</span>
+                        </div>
+                        <hr>
+                        <div class="into between-flex">
+                            <div class="info d-flex al-center">
+                                <img class="w-40 mr-15" src="imgs/psd.svg" alt="">
+                                <div class="text">
+                                    <h4 class="mb-10">My-Zip-File.pdf</h4>
+                                    <p class="c-grey fs-15">User</p>
+                                </div>
+                            </div>
+                            <span class="btn-shape fs-14 bg-eee">4.9mb</span>
+                        </div>
+                        <hr>
+                        <div class="into between-flex">
+                            <div class="info d-flex al-center">
+                                <img class="w-40 mr-15" src="imgs/zip.svg" alt="">
+                                <div class="text">
+                                    <h4 class="mb-10">My-DLL-File.pdf</h4>
+                                    <p class="c-grey fs-15">Admin</p>
+                                </div>
+                            </div>
+                            <span class="btn-shape fs-14 bg-eee">4.5mb</span>
+                        </div>
+                        <hr>
+                        <div class="into between-flex">
+                            <div class="info d-flex al-center">
+                                <img class="w-40 mr-15" src="imgs/dll.svg" alt="">
+                                <div class="text">
+                                    <h4 class="mb-10">My-Eps-File.pdf</h4>
+                                    <p class="c-grey fs-15">Designer</p>
+                                </div>
+                            </div>
+                            <span class="btn-shape fs-14 bg-eee">8.9mb</span>
+                        </div>
+                        <hr>
+                        <div class="into between-flex">
+                            <div class="info d-flex al-center">
+                                <img class="w-40 mr-15" src="imgs/eps.svg" alt="">
+                                <div class="text">
+                                    <h4 class="mb-10">my-file.pdf</h4>
+                                    <p class="c-grey fs-15">mo3a</p>
+                                </div>
+                            </div>
+                            <span class="btn-shape fs-14 bg-eee">4.9mb</span>
+                        </div>
+                     </div>
+                    <!-- Latest Uploads -->
+                    <!-- Last Project Progress -->
+                     <div class="progress p-20 bg-white rad-10 p-r">
+                        <h2 class="mt-0 mb-20">Last Project Progress</h2>
+                        <ul class="p-r">
+                            <li class="mt-30 d-flex al-center fs-18">Got The Project</li>
+                            <li class="mt-30 d-flex al-center fs-18">Started The Project</li>
+                            <li class="mt-30 d-flex al-center fs-18">The Project About To Finish</li>
+                            <li class="light mt-30 d-flex al-center fs-18">Test The Project</li>
+                            <li class="none mt-30 d-flex al-center fs-18 ">Finish The Project & Get Money</li>
+                        </ul>
+                        <img src="imgs/project.png" alt="" class="p-ab w-160">
+                     </div>
+                    <!-- Last Project Progress -->
+                    <!-- Reminders -->
+                     <div class="reminders bg-white rad-10 p-20">
+                        <h2 class="mt-0 mb-20">Reminders</h2>
+                        <ul>
+                            <li class="blue fw-bold p-r mb-20">Check My Tasks List <span class="fw-normal c-grey fs-14 d-block mt-5">28/09/2022 - 12:00am</span></li>
+                            <li class="green fw-bold p-r mb-20">Check My Projects<span class="fw-normal c-grey fs-14 d-block mt-5">26/10/2022 - 12:00am</span></li>
+                            <li class="orange fw-bold p-r mb-20">Call All My Clients <span class="fw-normal c-grey fs-14 d-block mt-5">05/11/2022 - 12:00am</span></li>
+                            <li class="red fw-bold p-r">Finish The Development Workshop<span class="fw-normal c-grey fs-14 d-block mt-5">20/12/2022 - 12:00am</span></li>
+                        </ul>
+                     </div>
+                    <!-- Reminders -->
+                    <!-- Latest Post -->
+                     <div class="latest-post bg-white rad-10 p-20">
+                        <h2 class="mt-0 mb-20">Latest Post</h2>
+                        <div class="up d-flex">
+                            <img class="border-r-c w-40 mr-15" src="imgs/avatar.avif" alt="">
+                            <h3>Mohamed yasser<span class="fw-normal c-grey fs-14 d-block mt-5">About 3 Hours Ago</span></h3>
+                        </div>
+                        <hr>
+                        <p class=" fw-500">You can fool all of the people some of the time, and some of the people all of the time, but you can't fool all of the people all of the time.</p>
+                        <hr>
+                        <div class="connect between-flex c-grey mt-30">
+                            <div class="like">
+                                <i class="fa-regular fa-heart"></i>
+                                <span>1.8K</span>
+                            </div>
+                            <div class="comment">
+                                <i class="fa-regular fa-comments"></i>
+                                <span>500</span>
+                            </div>
+                        </div>
+                     </div>
+                    <!-- Latest Post -->
+                    <!-- Social Media Stats -->
+                     <div class="social p-20 rad-10 bg-white">
+                        <h2 class="mt-0 mb-20">Social Media Stats</h2>
+                        <div class="twitter between-flex mb-10">
+                            <div class="icon d-flex al-center">
+                                <i class="fa-brands fa-twitter fa-2x mr-15 p-10 c-white center-flex  w-50"></i>
+                                <span>90K</span>
+                                <span>Followers</span>
+                            </div>
+                            <a class="btn-shape  fs-14 c-white mr-15" href="">Follow</a>
+                        </div>
+
+
+                        <div class="face between-flex mb-10">
+                            <div class="icon d-flex al-center">
+                                <i class="fa-brands fa-facebook-f fa-2x mr-15 p-10 c-white center-flex w-50"></i>
+                                <span>90K</span>
+                                <span>Followers</span>
+                            </div>
+                            <a class="btn-shape  fs-14 c-white mr-15" href="">Like</a>
+                        </div>
+
+
+                        <div class="youtube between-flex mb-10">
+                            <div class="icon d-flex al-center">
+                                <i class="fa-brands fa-youtube fa-2x mr-15 p-10 c-white center-flex w-50"></i>
+                                <span>90K</span>
+                                <span>Followers</span>
+                            </div>
+                            <a class="btn-shape fs-14 c-white mr-15" href="">Sub</a>
+                        </div>
+
+
+                        <div class="linkedin between-flex">
+                            <div class="icon d-flex al-center">
+                                <i class="fa-brands fa-linkedin fa-2x mr-15 p-10 c-white center-flex w-50"></i>
+                                <span>90K</span>
+                                <span>Followers</span>
+                            </div>
+                            <a class="btn-shape  fs-14 c-white mr-15" href="">Follow</a>
+                        </div>
+                     </div>
+                    <!-- Social Media Stats -->
+                </div>
+                    <!-- Projects -->
+                        <!-- <div class="projects bg-white p-20 rad-10 mt mt-20" >
+                            <h2 class="mb-20 mt-0">Projects</h2>
+                            <div class="responsive-table">
+                                <table class="fs-15 w-full">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                            <td>Finish Date</td>
+                                            <td>Client</td>
+                                            <td>Price</td>
+                                            <td>Team</td>
+                                            <td>Status</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Website Redesign</td>
+                                            <td>15 June 2022</td>
+                                            <td>ABC Corp</td>
+                                            <td>$4500</td>
+                                            <td>
+                                                <img src="imgs/team-01.png" alt="">
+                                                <img src="imgs/team-02.png" alt="">
+                                                <img src="imgs/team-03.png" alt="">
+                                                <img src="imgs/team-02.png" alt="">
+                                            </td>
+                                            <td><span class="btn-shape bg-orange">Pending</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mobile App</td>
+                                            <td>20 July 2022</td>
+                                            <td>XYZ Ltd</td>
+                                            <td>$6200</td>
+                                            <td>
+                                                <img src="imgs/team-01.png" alt="">
+                                                <img src="imgs/team-02.png" alt="">
+                                                <img src="imgs/team-03.png" alt="">
+                                            </td>
+                                            <td><span class="btn-shape bg-blue">In Progress</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>SEO Optimization</td>
+                                            <td>30 August 2022</td>
+                                            <td>DEF Inc</td>
+                                            <td>$3000</td>
+                                            <td>
+                                                <img src="imgs/team-01.png" alt="">
+                                                <img src="imgs/team-02.png" alt="">
+                                            </td>
+                                            <td><span class="btn-shape bg-green">Completed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Marketing Campaign</td>
+                                            <td>10 September 2022</td>
+                                            <td>GHI LLC</td>
+                                            <td>$7000</td>
+                                            <td>
+                                                <img src="imgs/team-01.png" alt="">
+                                                <img src="imgs/team-02.png" alt="">
+                                            </td>
+                                            <td><span class="btn-shape bg-red">Cancelled</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cloud Migration</td>
+                                            <td>25 October 2022</td>
+                                            <td>JKL Ltd</td>
+                                            <td>$8000</td>
+                                            <td>
+                                                <img src="imgs/team-01.png" alt="">
+                                                <img src="imgs/team-02.png" alt="">
+                                                <img src="imgs/team-03.png" alt="">
+                                                <img src="imgs/team-02.png" alt="">
+                                            </td>
+                                            <td><span class="btn-shape bg-green">Completed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Data Analysis</td>
+                                            <td>5 November 2022</td>
+                                            <td>MNO Corp</td>
+                                            <td>$5500</td>
+                                            <td>
+                                                <img src="imgs/team-01.png" alt="">
+                                                <img src="imgs/team-02.png" alt="">
+                                                <img src="imgs/team-03.png" alt="">
+                                                <img src="imgs/team-02.png" alt="">
+                                            </td>
+                                            <td><span class="btn-shape bg-orange">Pending</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div> -->
+                    <!-- Projects -->
+            </div>
+        </div>
+    </div>
+    <!-- end bage -->
+     <script src="main.js/4.js"></script>
+</body>
+</html>
